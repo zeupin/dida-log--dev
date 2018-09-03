@@ -17,7 +17,7 @@ class Log
     /**
      * Version
      */
-    const VERSION = '20180508';
+    const VERSION = '20180903';
 
     /**
      * 默认的日志目录
@@ -29,6 +29,8 @@ class Log
 
     /**
      * 记录一条日志
+     *
+     * @param any $var  要记录的1个或者多个变量
      *
      * @return bool 成功返回true，失败返回false
      */
@@ -71,8 +73,8 @@ class Log
     /**
      * 将一个变量记录到$dir/$file中。
      *
-     * @param string $file
-     * @param any $var
+     * @param string $file    日志文件名(日志目录已默认为self::$dir)
+     * @param any $var        要记录的1个或者多个变量
      */
     public static function writeTo($file, $var)
     {
