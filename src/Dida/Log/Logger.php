@@ -18,13 +18,13 @@ abstract class Logger implements LoggerInterface
     /**
      * 版本号
      */
-    const VERSION = '20191223';
+    const VERSION = '20200614';
 
 
     /**
      * 初始化
      *
-     * @param $conf   初始化的配置项
+     * @param array $conf 初始化的配置项
      */
     abstract public function init(array $conf);
 }

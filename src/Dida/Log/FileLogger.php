@@ -9,8 +9,8 @@
 namespace Dida\Log;
 
 use \Dida\Log\Logger;
-use \UI\Exception\InvalidArgumentException;
-use \UI\Exception\RuntimeException;
+use \InvalidArgumentException;
+use \RuntimeException;
 
 /**
  * FileLogger
@@ -20,7 +20,7 @@ class FileLogger extends Logger
     /**
      * 版本号
      */
-    const VERSION = '20191223';
+    const VERSION = '20200614';
 
     /**
      * 日志级别
